@@ -1,3 +1,28 @@
-.THIS {
-    
+.custom-margin {
+    margin: 10px;
+}
+
+.svg-icon:hover {
+    transform: scale(1.1);
+}
+
+.custom-button {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.custom-button:hover .svg-icon {
+    transform: scale(1.1);
+}
+
+.svg-icon {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    fill: currentColor;
 }
