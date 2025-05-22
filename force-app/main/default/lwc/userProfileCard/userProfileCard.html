@@ -1,13 +1,15 @@
 <template>
-<lightning-card>
-    <div>
-        <img src={profilePicture} alt="image loading" class="ImageEdit"/>
-    </div>
-    <div class = 'card'>
-            {name}<br>
-            {designation}<br>
-            {dob}<br>
-            {email}
-    </div>
-</lightning-card>
+    <lightning-card>
+        <div class="container">
+            <div class="image-container">
+                <img src={profilePicture} alt="image loading" class="ImageEdit"/>
+            </div>
+            <div class="card">
+                <div style="font-size: large;">{name}</div>
+                <div>{designation}</div>
+                <div>{dob}</div>
+                <div>{email}</div>
+            </div>
+        </div>
+    </lightning-card>
 </template>
