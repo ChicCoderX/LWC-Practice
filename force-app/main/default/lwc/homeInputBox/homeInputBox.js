@@ -1,7 +1,11 @@
 import { LightningElement, track } from 'lwc';
-
+const STRING_CONSTANTS = {
+    INPUT_BOX_PLACEHOLDER: 'Type here...'
+};
 export default class HomeInputBox extends LightningElement {
     @track inputList = [];
+
+    STRING_CONST = STRING_CONSTANTS;
 
     handleClick() {
         const ele = this.template.querySelector('input');

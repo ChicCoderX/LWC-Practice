@@ -7,7 +7,7 @@
                         <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#send"></use>
                     </svg>
                 </button>
-                <input type="text" id="text-input-id-1" placeholder="Type here!" class="slds-input" />
+                <input type="text" id="text-input-id-1" placeholder={STRING_CONST.INPUT_BOX_PLACEHOLDER} class="slds-input" />
             </div>
         </div>
         <template for:each={inputList} for:item="row"> <div class="inputList-format" key={row}>{row}</div> </template>
